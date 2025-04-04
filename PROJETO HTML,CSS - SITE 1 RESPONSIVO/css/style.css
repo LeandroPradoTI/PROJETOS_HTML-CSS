@@ -1,0 +1,238 @@
+
+@font-face {
+    font-family: 'komikax';
+    src: url(../fonts/KOMIKAX_.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(129, 129, 129);
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(78, 59, 184), blue);
+    text-align: center;
+}
+
+header > h1 {
+    font-family: komikax;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+header > p {
+    font-family: cursive;
+    font-weight: 600;
+    color: white;
+    padding: 0px 0px 10px 0px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+nav {
+    background-color: rgb(4, 4, 27);
+    height: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 6px 8px 0px 8px;
+    border-radius: 8px 8px 0px 0px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{  
+    background-color: rgba(50, 50, 101, 0.795);
+}
+main {
+    background-color: white;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+    font-family: cursive;
+}
+
+main > section > h1 {
+    color: rgb(1, 1, 63);
+    border-radius: 5px;
+    padding: 4px;
+    background-image:linear-gradient(to right, rgb(110, 110, 241), rgba(169, 169, 255, 0));
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 631px) {
+    main > section > h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 631px) {
+    main > section > h1 {
+        text-align:left;
+    }
+}
+
+ol {
+    list-style-position:inside ;
+    text-align: justify;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-left: 10px;
+    text-align: justify;
+}
+li {
+    margin-bottom: 5px;
+}
+
+main > section > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    padding: 5px 0px;
+}
+
+main > section > h2 {
+    margin: 10px 0px;
+}
+
+.tituloimagem {
+    color: black;
+    border-radius: 5px;
+    padding: 4px;
+    background-image:linear-gradient(to right, rgb(115, 192, 134), rgba(169, 169, 255, 0));
+    text-shadow: 2px 2px 2px white;
+    margin: 10px 0px;
+}
+.quadroprincipalimg {
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos horizontalmente */
+}
+
+@media screen and (max-width: 431px) {
+    .quadroprincipalimg {
+        display:block;
+        text-align: center; /* Centraliza os elementos */
+    }
+}
+
+.divimagemquadro1 {
+    width: 49.5%;
+}
+
+@media screen and (max-width: 431px) {
+    .divimagemquadro1 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.divimagemquadro2{
+    width: 49.5%;
+}
+
+@media screen and (max-width: 431px) {
+    .divimagemquadro2 {
+        width: 100%;
+    }
+}
+
+.imagemquadro {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: rgb(158, 158, 231);
+    padding: 3px;
+    border-radius: 0px 0px 5px 5px; 
+}
+
+.titulovideo {
+    color:black;
+    border-radius: 5px;
+    padding: 4px;
+    background-image:linear-gradient(to right, rgb(192, 115, 115), rgba(169, 169, 255, 0));
+    text-shadow: 2px 2px 2px white;
+    margin: 10px 0px;
+}
+
+.quadroprincipalvideo {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 431px) {
+    .quadroprincipalvideo {
+        display:block;
+        text-align: center; /* Centraliza os elementos */
+    } 
+}
+
+.videoquadro1 {
+    width: 49.5%;
+}
+
+
+@media screen and (max-width: 431px) {
+    .videoquadro1 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.videoquadro2 {
+    width: 49.5%;
+}
+
+@media screen and (max-width: 431px) {
+    .videoquadro2 {
+        width: 100%;
+    }
+}
+
+.video {
+    display: flex;
+    width: 100%;
+    height: 220px;
+}
+
+@media screen and (min-width: 1500px) {
+    .video {
+        height: auto;
+    }
+}
+
+.legendavideos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: rgb(158, 158, 231);
+    padding: 3px;
+    border-radius: 0px 0px 5px 5px; 
+}
+
+footer {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-align: center;
+}
